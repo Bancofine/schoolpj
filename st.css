@@ -55,8 +55,11 @@ li{
     flex-direction: row-reverse;
 }
 
-#canvas_section{
-    height: 500px;
+#twitter{
+    height: 591px;
     background: gray;
-   
+    
 }
+
+
+
