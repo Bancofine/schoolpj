@@ -1,35 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="st.css" />
-    <link rel="stylesheet" href="Animate.css" />
-    <script src="js.js"></script>
-    <title>My portfolio</title>
+	<meta charset="UTF-8">
+	<title>포트폴리오</title>
+	<link rel="stylesheet" href="css.css">
+	<script src="js.js"></script>
+	<script src="js1.js"></script>
+
 </head>
 
-<div class="top-left fixed">
-    <div class="animate__animated animate__zoomInDown" ,id="mi">미완성</div>
+<body>
+	<div id="fullpage">
+		<div class='quick'>
+			<ul></ul>
+		</div>
+		<div class="fullsection full1" pageNum="1"><span>
+				<h1 id="phrase"></h1>
+			</span></div>
+		<div class="fullsection full2" pageNum="2"><span>2 PAGE</span></div>
+		<div class="fullsection full3" pageNum="3"><span>3 PAGE</span></div>
+		<div class="fullsection full4" pageNum="4"><span>4 PAGE</span></div>
+		<div class="fullsection full5" pageNum="5"><span>5 PAGE</span></div>
+	</div>
+</body>
 
-    <div class="circle">
-    </div>
 
-
-</div>
-
-<div class="bottom-right fixed">
-    <ul>
-        <button><a href="https://career.programmers.co.kr/pr/bancofine">Programmers</a></button>
-        <button><a href="https://bento.me/wan">Bento</a></button>
-        <button><a href="AI.html">AI Hub</a></button>
-
-    </ul>
-
-</div>
-
-<footer>create by bancofine.netlify.app</footer>
+<script>
+	$(document).ready(function () {
+		fullset();
+		quickClick();
+	});
+</script>
 
 </html>
