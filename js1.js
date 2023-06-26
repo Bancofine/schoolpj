@@ -1,3 +1,5 @@
+//글자 타이핑 효과
+//글자 순서대로 출력
 var phrases = [
     "안녕하세요!",
     "저의",
@@ -8,9 +10,18 @@ var phrases = [
 var currentIndex = 0;
 function changePhrase() {
     var phraseElement = document.getElementById("phrase");
-    phraseElement.textContent = phrases[currentIndex];
+    var phrase = phrases[currentIndex];
+    var typedPhrase = "";
+    var i = 0;
+    var typingInterval = setInterval(function () {
+        typedPhrase += phrase.charAt(i);
+        phraseElement.textContent = typedPhrase;
+        i++;
+        if (i > phrase.length) {
+            clearInterval(typingInterval);
+        }
+    }, 80);
     currentIndex = (currentIndex + 1) % phrases.length;
 }
-// 일정 시간마다 문구 변경 함수 호출
-setInterval(changePhrase, 1200);
+setInterval(changePhrase, 1500);
 window.onload = changePhrase;
