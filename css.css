@@ -1,4 +1,5 @@
 html,
+
 body {
     width: 100%;
     height: 100%;
@@ -24,6 +25,7 @@ body {
 
 .full1 {
     background: #AACD6E;
+
 }
 
 .full2 {
@@ -55,6 +57,7 @@ body {
 
 .full2 span {
     color: #000;
+
 }
 
 ul,
